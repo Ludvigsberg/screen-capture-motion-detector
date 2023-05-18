@@ -2,6 +2,11 @@ import dxcam
 import cv2
 from time import time
 
+"""
+NOTE: This doesn't work well if your GPU is under load. 
+Check out mss_sensor.py for better overall performance.
+"""
+
 camera = dxcam.create()
 camera.start(target_fps=120)
 
