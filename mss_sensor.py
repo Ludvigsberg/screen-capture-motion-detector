@@ -3,7 +3,6 @@ import numpy as np
 from time import time
 from mss import mss
 
-
 object_detector = cv2.createBackgroundSubtractorMOG2(
     history=100, varThreshold=3, detectShadows=True
 )
